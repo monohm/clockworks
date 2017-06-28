@@ -1,0 +1,43 @@
+.remote-app-circle {
+
+  /* initial height */
+	width: 54px;
+	height: 54px;
+
+  /*color: red;*/
+	background-image: url('./remote/assets/clockface_7.jpg');
+
+	/* subsequent scaling */
+	/*transform: scale3d(0.6,0.6,0.6);*/
+
+	/*--positron-p3d-material-type: phong;*/
+	--positron-p3d-circle-segments: 50;
+	--positron-p3d-material-render-side: both;
+
+}
+
+#hand
+{
+  /* initial size */
+  width: 0.5px;
+  height: 54px;
+
+  color: white;
+
+  /* subsequent scaling */
+  transform: translate3d(0,0,2px);
+
+  --positron-p3d-material-type: phong;
+
+  animation: rotatehand 3s infinite;
+}
+
+@keyframes rotatehand {
+  0% {
+    transform: translate3d(0,0,2px) rotateZ(0deg);
+  }
+
+  100% {
+    transform: translate3d(0,0,2px) rotateZ(360deg);
+  }
+}
