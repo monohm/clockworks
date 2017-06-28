@@ -1,0 +1,28 @@
+<p3d-circle class="remote-app-circle"
+  p-action="(click) log remote app clicked!"></p3d-circle>
+
+  <p3d-group class="hour-hand-group">
+    <p3d-cube id="hand"
+    			p-action-1="(click) toggle-class transformed/p-this-element"
+    			p-action-2="(mouseenter) log entered!"
+    			p-action-3="(mouseleave) log left!"
+    		></p3d-cube>
+  </p3d-group>
+
+  <p3d-group class="minute-hand-group">
+    <p3d-cube id="minutehand"
+    			p-action-1="(click) toggle-class transformed/p-this-element"
+    			p-action-2="(mouseenter) log entered!"
+    			p-action-3="(mouseleave) log left!"
+    		></p3d-cube>
+  </p3d-group>
+
+  <p3d-group class="second-hand-offset">
+    <p3d-group class="second-hand-group">
+      <p3d-plane id="secondhand"
+      			p-action-1="(click) toggle-class transformed/p-this-element"
+      			p-action-2="(mouseenter) log entered!"
+      			p-action-3="(mouseleave) log left!"
+      		></p3d-plane>
+    </p3d-group>
+  </p3g-group>
