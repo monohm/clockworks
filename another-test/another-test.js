@@ -1,29 +1,29 @@
-var	RemoteView = function ()
+var	AnotherTestView = function ()
 {
 	positron.View.call (this);
 };
-monohm.inherits (RemoteView, positron.View);
+monohm.inherits (AnotherTestView, positron.View);
 
 // called just before a view's visible animation starts
-RemoteView.prototype.onBeforeVisible = function ()
+AnotherTestView.prototype.onBeforeVisible = function ()
 {
 	positron.View.prototype.onBeforeVisible.call (this);
 
-	console.log ("RemoteView.onBeforeVisible()");
+	console.log ("AnotherTestView.onBeforeVisible()");
 }
 
 // called when a view's markup is final
-RemoteView.prototype.onDOMReady = function ()
+AnotherTestView.prototype.onDOMReady = function ()
 {
 	positron.View.prototype.onDOMReady.call (this);
 
-	console.log ("RemoteView.onDOMReady()");
+	console.log ("AnotherTestView.onDOMReady()");
 
 }
 
-RemoteView.prototype.handleEvent = function (inEvent)
+AnotherTestView.prototype.handleEvent = function (inEvent)
 {
-	console.log ("RemoteView.handleEvent()");
+	console.log ("AnotherTestView.handleEvent()");
 
   if (inEvent.type === 'touchstart') {
 
@@ -40,25 +40,25 @@ RemoteView.prototype.handleEvent = function (inEvent)
 }
 
 // called when a view's markup is final AND its visible animation has completed
-RemoteView.prototype.onVisible = function ()
+AnotherTestView.prototype.onVisible = function ()
 {
 	positron.View.prototype.onVisible.call (this);
 
-	console.log ("RemoteView.onVisible()");
+	console.log ("AnotherTestView.onVisible()");
 }
 
 // called just before a view's invisible animation starts
-RemoteView.prototype.onBeforeInvisible = function ()
+AnotherTestView.prototype.onBeforeInvisible = function ()
 {
 	positron.View.prototype.onBeforeInvisible.call (this);
 
-	console.log ("RemoteView.onBeforeInvisible()");
+	console.log ("AnotherTestView.onBeforeInvisible()");
 }
 
 // called when a view's invisible animation completes
-RemoteView.prototype.onInvisible = function ()
+AnotherTestView.prototype.onInvisible = function ()
 {
 	positron.View.prototype.onInvisible.call (this);
 
-	console.log ("RemoteView.onInvisible()");
+	console.log ("AnotherTestView.onInvisible()");
 }

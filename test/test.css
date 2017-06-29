@@ -1,4 +1,4 @@
-.remote-app-circle {
+.test-remote-app-circle {
 
   /* initial height */
 	width: 54px;
@@ -16,7 +16,7 @@
 
 }
 
-#hand
+#test-hand
 {
   /* initial size */
   width: 0.5px;
@@ -29,10 +29,10 @@
 
   --positron-p3d-material-type: phong;
 
-  animation: rotatehand 3s infinite;
+  animation: test-rotatehand 3s infinite;
 }
 
-@keyframes rotatehand {
+@keyframes test-rotatehand {
   0% {
     transform: translate3d(0,0,2px) rotateZ(0deg);
   }

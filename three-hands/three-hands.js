@@ -1,29 +1,29 @@
-var	RemoteView = function ()
+var	ThreeHandsView = function ()
 {
 	positron.View.call (this);
 };
-monohm.inherits (RemoteView, positron.View);
+monohm.inherits (ThreeHandsView, positron.View);
 
 // called just before a view's visible animation starts
-RemoteView.prototype.onBeforeVisible = function ()
+ThreeHandsView.prototype.onBeforeVisible = function ()
 {
 	positron.View.prototype.onBeforeVisible.call (this);
 
-	console.log ("RemoteView.onBeforeVisible()");
+	console.log ("ThreeHandsView.onBeforeVisible()");
 }
 
 // called when a view's markup is final
-RemoteView.prototype.onDOMReady = function ()
+ThreeHandsView.prototype.onDOMReady = function ()
 {
 	positron.View.prototype.onDOMReady.call (this);
 
-	console.log ("RemoteView.onDOMReady()");
+	console.log ("ThreeHandsView.onDOMReady()");
 
 }
 
-RemoteView.prototype.handleEvent = function (inEvent)
+ThreeHandsView.prototype.handleEvent = function (inEvent)
 {
-	console.log ("RemoteView.handleEvent()");
+	console.log ("ThreeHandsView.handleEvent()");
 
   if (inEvent.type === 'touchstart') {
 
@@ -40,25 +40,25 @@ RemoteView.prototype.handleEvent = function (inEvent)
 }
 
 // called when a view's markup is final AND its visible animation has completed
-RemoteView.prototype.onVisible = function ()
+ThreeHandsView.prototype.onVisible = function ()
 {
 	positron.View.prototype.onVisible.call (this);
 
-	console.log ("RemoteView.onVisible()");
+	console.log ("ThreeHandsView.onVisible()");
 }
 
 // called just before a view's invisible animation starts
-RemoteView.prototype.onBeforeInvisible = function ()
+ThreeHandsView.prototype.onBeforeInvisible = function ()
 {
 	positron.View.prototype.onBeforeInvisible.call (this);
 
-	console.log ("RemoteView.onBeforeInvisible()");
+	console.log ("ThreeHandsView.onBeforeInvisible()");
 }
 
 // called when a view's invisible animation completes
-RemoteView.prototype.onInvisible = function ()
+ThreeHandsView.prototype.onInvisible = function ()
 {
 	positron.View.prototype.onInvisible.call (this);
 
-	console.log ("RemoteView.onInvisible()");
+	console.log ("ThreeHandsView.onInvisible()");
 }
