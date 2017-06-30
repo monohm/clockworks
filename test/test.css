@@ -5,7 +5,7 @@
 	height: 54px;
 
   /*color: red;*/
-	background-image: url('./test/assets/clockface_7.jpg');
+	background-image: url('http://clocks.mono.hm/test/assets/clockface_7.jpg');
 
 	/* subsequent scaling */
 	/*transform: scale3d(0.6,0.6,0.6);*/

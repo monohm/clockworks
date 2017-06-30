@@ -5,7 +5,7 @@
 	height: 54px;
 
   /*color: red;*/
-	background-image: url('./three-hands/assets/clockface_7.jpg');
+	background-image: url('http://clocks.mono.hm/three-hands/assets/clockface_7.jpg');
 
 	/* subsequent scaling */
 	/*transform: scale3d(0.6,0.6,0.6);*/
@@ -32,7 +32,7 @@
   /* subsequent scaling */
   transform: translate3d(0,13px,2px);
 
-  background-image: url('./three-hands/assets/hour-hand.png');
+  background-image: url('http://clocks.mono.hm/three-hands/assets/hour-hand.png');
 
   --positron-p3d-material-alpha-test: 0.5;
 	--positron-p3d-material-transparency: true;
@@ -58,7 +58,7 @@
   /* subsequent scaling */
   transform: translate3d(0,13px,2px);
 
-  background-image: url('./three-hands/assets/hour-hand.png');
+  background-image: url('http://clocks.mono.hm/three-hands/assets/hour-hand.png');
 
   --positron-p3d-material-alpha-test: 0.5;
 	--positron-p3d-material-transparency: true;
@@ -96,7 +96,7 @@
   /* subsequent scaling */
   transform: translate3d(0,5px,2px);
 
-  background-image: url('./three-hands/assets/hour-hand.png');
+  background-image: url('http://clocks.mono.hm/three-hands/assets/hour-hand.png');
 
   --positron-p3d-material-alpha-test: 0.5;
 	--positron-p3d-material-transparency: true;
