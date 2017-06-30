@@ -1,3 +1,124 @@
+<style>
+.remote-app-circle {
+
+  /* initial height */
+	width: 54px;
+	height: 54px;
+
+  /*color: red;*/
+	background-image: url('http://clocks.mono.hm/three-hands/assets/clockface_7.jpg');
+
+	/* subsequent scaling */
+	/*transform: scale3d(0.6,0.6,0.6);*/
+
+	/*--positron-p3d-material-type: phong;*/
+	--positron-p3d-circle-segments: 50;
+	--positron-p3d-material-render-side: both;
+
+}
+
+.hour-hand-group {
+  width: 54px;
+  height: 54px;
+  animation: rotatehand 3s infinite;
+
+}
+
+#hand
+{
+  /* initial size */
+  width: 3px;
+  height: 21px;
+
+  /* subsequent scaling */
+  transform: translate3d(0,13px,2px);
+
+  background-image: url('http://clocks.mono.hm/three-hands/assets/hour-hand.png');
+
+  --positron-p3d-material-alpha-test: 0.5;
+	--positron-p3d-material-transparency: true;
+
+  --positron-p3d-material-type: phong;
+
+
+}
+
+.minute-hand-group {
+  width: 54px;
+  height: 54px;
+  animation: rotatehand 60s infinite;
+
+}
+
+#minutehand
+{
+  /* initial size */
+  width: 1.5px;
+  height: 21px;
+
+  /* subsequent scaling */
+  transform: translate3d(0,13px,2px);
+
+  background-image: url('http://clocks.mono.hm/three-hands/assets/hour-hand.png');
+
+  --positron-p3d-material-alpha-test: 0.5;
+	--positron-p3d-material-transparency: true;
+
+  --positron-p3d-material-type: phong;
+
+
+}
+
+
+.second-hand-offset {
+  width: 10px;
+  height: 10px;
+
+
+  transform: translate3d(0, -14px, 0);
+
+}
+
+.second-hand-group {
+  width: 10px;
+  height: 10px;
+
+
+  animation: rotatehand 1s infinite;
+
+}
+
+#secondhand
+{
+  /* initial size */
+  width: 1.5px;
+  height: 8px;
+
+  /* subsequent scaling */
+  transform: translate3d(0,5px,2px);
+
+  background-image: url('http://clocks.mono.hm/three-hands/assets/hour-hand.png');
+
+  --positron-p3d-material-alpha-test: 0.5;
+	--positron-p3d-material-transparency: true;
+
+  --positron-p3d-material-type: phong;
+
+
+}
+
+@keyframes rotatehand {
+  0% {
+    transform: rotateZ(0deg);
+  }
+
+  100% {
+    transform: rotateZ(-360deg);
+  }
+}
+</style>
+
+
 <p3d-circle class="remote-app-circle"></p3d-circle>
 
   <p3d-group class="hour-hand-group">
